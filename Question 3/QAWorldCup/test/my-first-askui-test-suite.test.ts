@@ -25,6 +25,9 @@ describe('QA World Cup with AskUI', () => {
     await aui.typeIn("What is NQLB?").textfield().contains().text().withText("Type a new message").exec();
     await aui.mouseLeftClick().exec();
 
+    await aui.moveMouseTo().text().withText("Yes").exec();
+    await aui.mouseLeftClick().exec();
+
     await aui.annotate();
  
   });
